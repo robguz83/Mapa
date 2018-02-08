@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ENRE - Mapa de Cortes</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="files/leaflet.css" />
+    <link rel="stylesheet" href="files/MarkerCluster.css" />
+    <link rel="stylesheet" href="files/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="files/jquery-ui.css">
+    <link rel="stylesheet" href="files/proto.io.css" />
+    <link rel="stylesheet" href="files/estilos.css" />
+
+    <link rel="stylesheet" href="files/L.Control.SlideMenu.css">
+
+    <script src="files/loader.js"></script>
+
+
+</head>
+
+<body>
+   
+    <ul id="sortable">
+
+        <li class="ui-state-default">
+            <div id="map_D" class="map">
+                <p class='titulo'> Cortes </p>
+
+                        
+                <ul class="navigation">
+                    <!--li class="">
+                        <a href="#" title="Mapa de calor">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch_D" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch_D">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>    
+                            <span class="leyenda">Calor</span>
+                        </a>
+                    </li-->
+
+                    <!--li class="home"><a href="javascript:toogleBT();" title="Mostrar/Ocultar Interrupciones BT"></a></li>
+                    <li class="about"><a href="javascript:toogleMTAT();" title="Mostrar/Ocultar Interrupciones MTAT"></a></li-->
+                    <!--li class="search"><a href="javascript:redimensionar(3,'#map_D');" title="Dos mapas verticales por pantalla"></a></li>
+                    <li class="photos"><a href="javascript:redimensionar(4,'#map_D');" title="Un mapa por pantalla"></a></li-->
+                    
+                    <li>
+                        <a href = "#" title = "DISTRIBUIDORAS">
+                            <label class = "leyenda" for = "distribuidora"> DISTRIBUIDORA </label>
+                        </a>
+                        
+                    </li>
+
+                    <li class="">
+                        <a href="#" title="[Ver/Ocultar] EDESUR">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myEdesur" checked>
+                                <label class="onoffswitch-label" for="myEdesur">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>   
+                            <span class="leyenda">EDS</span>                         
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="#" title="[Ver/Ocultar] EDENOR">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myEdenor" checked>
+                                <label class="onoffswitch-label" for="myEdenor">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                    
+                                </label>
+                            </div>                 
+                            <span class="leyenda">EDN</span>      
+                        </a>
+                    </li>
+
+                    <li></li>
+                    
+                    <li>
+                        <a href = "#" title = "TIPOS DE CORTES">
+                            <label class = "leyenda" for = "tipo_de_corte"> TIPOS DE CORTE </label>
+                        </a>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" title="[Ver/Ocultar] Cortes de baja tension">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myCortesBT" checked>
+                                <label class="onoffswitch-label" for="myCortesBT">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>       
+                            <span class="leyenda">BT</span>                     
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="#" title="[Ver/Ocultar] Cortes de media y alta tension">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myCortesMTAT" checked>
+                                <label class="onoffswitch-label" for="myCortesMTAT">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>        
+                            <span class="leyenda">MTAT</span>                    
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </li>
+        
+    </ul>
+     
+</body>
+</html>
