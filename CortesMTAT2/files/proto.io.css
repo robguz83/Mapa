@@ -1,0 +1,92 @@
+/*
+    https://proto.io/freebies/onoff/
+    Perilla ON/OFF para heatmap
+*/
+.onoffswitch {
+    position: relative;
+    width: 47px;
+    z-index: 9999;
+    margin-top: 2.5px;
+    float: left;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.leyenda {
+        float: right;
+        margin-top: 2.5px;
+        margin-right: 8px;
+        font-weight: bolder;
+        
+        
+}
+
+.onoffswitch-checkbox {
+    display: none;
+    z-index: 9999;
+}
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 9px;
+    z-index: 9999;
+}
+.onoffswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    z-index: 9999;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 15px; 
+    padding: 0; 
+    line-height: 15px;
+    z-index:9999;
+    font-size: 10px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "SI";
+    z-index:9999;
+    padding-left: 8px;
+    background-color: #E02020; 
+    color: #BED938;
+}
+.onoffswitch-inner:after {
+    content: "NO";
+    z-index: 9999;
+    padding-right: 8px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; 
+    width: 6px; 
+    margin: 4.5px;
+    z-index:9999;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 28px;
+    border: 2px solid #999999; 
+    border-radius: 9px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+    z-index: 9999;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    z-index: 9999;
+}
